@@ -1,0 +1,4 @@
+<h1> Hello <%= p @current_user %> </h1>
+<%= button_to 'Sign Out', destroy_user_session_path, method: :delete, class: "nav-link", form: { class: "d-inline" } %>
+<%= button_to 'Sign In', new_user_session_path, class: "nav-link", form: { class: "d-inline" } %>
+<%= link_to 'Sign Up', new_user_registration_path,class:"nav-link" %>
